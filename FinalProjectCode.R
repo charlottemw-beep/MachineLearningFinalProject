@@ -12,7 +12,7 @@
 # is intended to be read in conjunction with the written report.               #
 # Both the code and comments have been made to  fit a line width of no more    #
 # than 80 characters, this is done to allow the viewing of the code, comments  #
-# and graphs at the same time when the code is being run.                      #                                     # 
+# and graphs at the same time when the code is being run.                      #                                     
 # The version of R used is: 4.5.2                                              #
 ################################################################################
 
@@ -214,7 +214,7 @@ df_clean$Ethnicity <- ifelse(df_clean$Ethnicity <= 0, "A",
 df_clean$ParentalEducation <- ifelse(df_clean$ParentalEducation <= 0, "A", 
                               ifelse(df_clean$ParentalEducation <= 1, "B", 
                               ifelse(df_clean$ParentalEducation <= 2, "C", 
-                              ifelse(df_clean$ParentalEducation <=3, "D",                                        "E"))))
+                              ifelse(df_clean$ParentalEducation <=3, "D","E"))))
 df_clean$Tutoring <- ifelse(df_clean$Tutoring <= 0, "No", "Yes")
 df_clean$ParentalSupport <- ifelse(df_clean$ParentalSupport <= 0, "A", 
                             ifelse(df_clean$ParentalSupport <= 1, "B", 
